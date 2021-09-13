@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".Activity.PemeriksaanMandiriActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="56dp">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/ic_back_white"
+        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:text="Pemeriksaan Mandiri"
+        android:textColor="@color/whiteFont"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:visibility="gone"
+                android:textColor="@color/whiteFont"
+                android:textSize="1sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTtl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:visibility="gone"
+                android:textColor="@color/whiteFont"
+                android:textSize="1sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvKehamilanKe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:visibility="gone"
+                android:textColor="@color/whiteFont"
+                android:textSize="1sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvUsiaAnakTerakhkir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:visibility="gone"
+                android:textColor="@color/whiteFont"
+                android:textSize="1sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvGolDarah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:visibility="gone"
+                android:textColor="@color/whiteFont"
+                android:textSize="1sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvUmur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:visibility="gone"
+                android:textColor="@color/whiteFont"
+                android:textSize="1sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTaksiranPersalinan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:visibility="gone"
+                android:textColor="@color/whiteFont"
+                android:textSize="1sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/img_progres_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:text="Form Pemeriksaan Mandiri"
+        android:textColor="@color/fontDefault"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:hint="Tanggal HPHT (Hari Pertama Haid Terakhir)"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="@color/color"
+            app:boxStrokeWidth="2.3dp"
+            app:hintTextAppearance="@style/text_input_layout"
+            app:hintTextColor="@color/color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etHTHP"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:inputType="textEmailAddress"
+                android:text="HH-BB-TTTT"
+                android:focusable="false"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:paddingStart="24dp"
+                android:fontFamily="@font/nunito_sans"
+                android:paddingEnd="24dp"
+                android:textColor="@color/fontDefault"
+                android:textColorHint="@color/fontDefault"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/linearUsiaKehamilan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"
+            android:background="@drawable/bg_btn_outline"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_masalah"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usia kehamilan anda adalah"
+                android:textColor="@color/fontDefault"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/tvUsiaKehamilan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:textColor="@color/fontDefault"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:focusableInTouchMode="true"
+            android:hint="Tinggi Badan (cm)"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="@color/color"
+            app:boxStrokeWidth="2.3dp"
+            app:hintTextAppearance="@style/text_input_layout"
+            app:hintTextColor="@color/color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etTinggiBadan"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:inputType="number"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:fontFamily="@font/nunito_sans"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:textColor="@color/fontDefault"
+                android:textColorHint="@color/fontDefault"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:focusableInTouchMode="true"
+            android:hint="BB sebelum hamil atau saat HPHT (Kg)"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="@color/color"
+            app:boxStrokeWidth="2.3dp"
+            app:hintTextAppearance="@style/text_input_layout"
+            app:hintTextColor="@color/color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etBB_sebelum_hamil"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:inputType="number"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:fontFamily="@font/nunito_sans"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:textColor="@color/fontDefault"
+                android:textColorHint="@color/fontDefault"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:focusableInTouchMode="true"
+            android:hint="BB setelah hamil (Kg)"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="@color/color"
+            app:boxStrokeWidth="2.3dp"
+            app:hintTextAppearance="@style/text_input_layout"
+            app:hintTextColor="@color/color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etBB_setelah_hamil"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:inputType="number"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:fontFamily="@font/nunito_sans"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:textColor="@color/fontDefault"
+                android:textColorHint="@color/fontDefault"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Tekanan Darah"
+                android:focusableInTouchMode="true"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxStrokeColor="@color/color"
+                app:boxStrokeWidth="2.3dp"
+                app:hintTextAppearance="@style/text_input_layout"
+                app:hintTextColor="@color/color">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etTekananDarah_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:maxLines="1"
+                    android:fontFamily="@font/nunito_sans"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
+                    android:textColor="@color/fontDefault"
+                    android:textColorHint="@color/fontDefault"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/fontDefault"
+                android:textSize="20sp"
+                android:fontFamily="@font/roboto_bold"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:hint="(mmHg)"
+                android:focusableInTouchMode="true"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxStrokeColor="@color/color"
+                app:boxStrokeWidth="2.3dp"
+                app:hintTextAppearance="@style/text_input_layout"
+                app:hintTextColor="@color/color">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etTekananDarah_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:maxLines="1"
+                    android:fontFamily="@font/nunito_sans"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
+                    android:textColor="@color/fontDefault"
+                    android:textColorHint="@color/fontDefault"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:focusableInTouchMode="true"
+            android:hint="Ukuran LILA (Lingkar Lengan Atas) (cm)"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="@color/color"
+            app:boxStrokeWidth="2.3dp"
+            app:hintTextAppearance="@style/text_input_layout"
+            app:hintTextColor="@color/color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etUkuranLILA"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:inputType="number"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:paddingStart="24dp"
+                android:fontFamily="@font/nunito_sans"
+                android:paddingEnd="24dp"
+                android:textColor="@color/fontDefault"
+                android:textColorHint="@color/fontDefault"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:hint="Tinggi Rahim (cm)"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxStrokeColor="@color/color"
+                app:boxStrokeWidth="2.3dp"
+                app:hintTextAppearance="@style/text_input_layout"
+                app:hintTextColor="@color/color">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etTinggiRahim"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:maxLines="1"
+                    android:fontFamily="@font/nunito_sans"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
+                    android:textColor="@color/fontDefault"
+                    android:textColorHint="@color/fontDefault"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tvDialogTinggiRahim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/nunito_sans"
+                android:textColor="@android:color/holo_red_light"
+                android:text="> Klik disini untuk mengetahui caranya"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:focusableInTouchMode="true"
+        android:hint="Berapa kali gerak janin dalam sehari?"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxStrokeColor="@color/color"
+        app:boxStrokeWidth="2.3dp"
+        app:hintTextAppearance="@style/text_input_layout"
+        app:hintTextColor="@color/color">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etGerakJaninSehari"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:inputType="number"
+            android:maxLength="3"
+            android:maxLines="1"
+            android:fontFamily="@font/nunito_sans"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:textColor="@color/fontDefault"
+            android:textColorHint="@color/fontDefault"
+            android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout2"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:hint="Intensitas kontraksi atau kenceng kenceng"
+                    app:boxCornerRadiusBottomEnd="8dp"
+                    app:boxCornerRadiusBottomStart="8dp"
+                    app:boxCornerRadiusTopEnd="8dp"
+                    app:boxCornerRadiusTopStart="8dp"
+                    app:boxStrokeColor="@color/color"
+                    app:boxStrokeWidth="2.3dp"
+                    app:hintTextAppearance="@style/text_input_layout"
+                    app:hintTextColor="@color/color"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etIntensitasKontraksi"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="35"
+                        android:text=" "
+                        android:fontFamily="@font/nunito_sans"
+                        android:focusable="false"
+                        android:paddingStart="24dp"
+                        android:paddingEnd="24dp"
+                        android:textColor="@color/fontDefault"
+                        android:textColorHint="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Spinner
+                    android:id="@+id/spinner_kontraksi"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:spinnerMode="dropdown"
+                    android:fontFamily="@font/nunito_sans"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textInputLayout2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:text="Form Pemeriksaan Tambahan"
+            android:textColor="@color/fontDefault"
+            android:textSize="16sp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:focusableInTouchMode="true"
+            android:hint="Hemoglobin (Hb Darah) (gr%)"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="@color/color"
+            app:boxStrokeWidth="2.3dp"
+            app:hintTextAppearance="@style/text_input_layout"
+            app:hintTextColor="@color/color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etHBDarah"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:inputType="number"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:fontFamily="@font/nunito_sans"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:textColor="@color/fontDefault"
+                android:textColorHint="@color/fontDefault"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/nunito_sans"
+            android:text="Imunisasi TT 1 (Tetanus 1)"
+            android:textColor="@color/fontDefault"
+            android:textSize="16sp"/>
+
+        <RadioGroup
+            android:id="@+id/rg_tetanus_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/rb_belum_pernah"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/color"
+                android:fontFamily="@font/nunito_sans"
+                android:paddingStart="8dp"
+                android:text="Belum Pernah"
+                android:textColor="@color/fontDefault"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rb_sudah_pernah"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/color"
+                android:fontFamily="@font/nunito_sans"
+                android:paddingStart="8dp"
+                android:text="Sudah Pernah"
+                android:textColor="@color/fontDefault"
+                android:textSize="16sp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/nunito_sans"
+            android:text="Imunisasi TT 2 (Tetanus 2)"
+            android:textColor="@color/fontDefault"
+            android:textSize="16sp"/>
+
+        <RadioGroup
+            android:id="@+id/rg_tetanus_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/rb_belum_pernah_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/color"
+                android:fontFamily="@font/nunito_sans"
+                android:paddingStart="8dp"
+                android:text="Belum Pernah"
+                android:textColor="@color/fontDefault"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rb_sudah_pernah_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/color"
+                android:fontFamily="@font/nunito_sans"
+                android:paddingStart="8dp"
+                android:text="Sudah Pernah"
+                android:textColor="@color/fontDefault"
+                android:textSize="16sp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:text="Hasil Laboratorium (Opsional)"
+            android:textColor="@color/fontDefault"
+            android:textSize="16sp"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:focusableInTouchMode="true"
+            android:hint="Urine"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="@color/color"
+            app:boxStrokeWidth="2.3dp"
+            app:hintTextAppearance="@style/text_input_layout"
+            app:hintTextColor="@color/color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etUrine"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:inputType="text"
+                android:maxLength="50"
+                android:maxLines="2"
+                android:fontFamily="@font/nunito_sans"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:textColor="@color/fontDefault"
+                android:textColorHint="@color/fontDefault"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:focusableInTouchMode="true"
+            android:hint="Feses"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="@color/color"
+            app:boxStrokeWidth="2.3dp"
+            app:hintTextAppearance="@style/text_input_layout"
+            app:hintTextColor="@color/color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etFeses"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:inputType="text"
+                android:maxLength="50"
+                android:maxLines="2"
+                android:fontFamily="@font/nunito_sans"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:textColor="@color/fontDefault"
+                android:textColorHint="@color/fontDefault"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:focusableInTouchMode="true"
+            android:hint="Swab Vagina"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="@color/color"
+            app:boxStrokeWidth="2.3dp"
+            app:hintTextAppearance="@style/text_input_layout"
+            app:hintTextColor="@color/color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etSwabVagina"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:inputType="text"
+                android:maxLength="50"
+                android:maxLines="2"
+                android:fontFamily="@font/nunito_sans"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:textColor="@color/fontDefault"
+                android:textColorHint="@color/fontDefault"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    </LinearLayout>
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_btn"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="Lihat Hasil"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

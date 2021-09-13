@@ -1,0 +1,1222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".Activity.PemeriksaanRisikoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="56dp">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="@color/color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/icBack"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/ic_back_white"
+                app:layout_constraintBottom_toBottomOf="@+id/textView9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:text="Pemeriksaan Risiko"
+                android:textColor="@color/whiteFont"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvKelompokRisiko"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:textColor="@color/whiteFont"
+                android:visibility="gone"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvPerawatan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:textColor="@color/whiteFont"
+                android:visibility="gone"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvRujukan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:textColor="@color/whiteFont"
+                android:visibility="gone"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTempat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:textColor="@color/whiteFont"
+                android:visibility="gone"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvPenolong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:textColor="@color/whiteFont"
+                android:visibility="gone"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="Silahkan isi form dibawah ini untuk mengetahui
+masalah atau faktor resiko kehamilan Anda!"
+                    android:textColor="#949494"
+                    android:textSize="13sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="@string/anda_terlalu_muda_hamil_16_tahun"
+                    android:textColor="@color/fontDefault"
+                    android:textSize="15sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_terlalumuudahamil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_ya_hamil"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="@string/ya"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_tidak_hamil"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="@string/tidak"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="@string/anda_terlalu_lambat_hamil_kawin_4_tahun"
+                    android:textColor="@color/fontDefault"
+                    android:textSize="15sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_terlambathamil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_ya_terlambat"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Ya"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_tidak_terlambat"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Tidak"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="@string/anda_terlalu_tua_hamil_35_tahun"
+                    android:textColor="@color/fontDefault"
+                    android:textSize="15sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_terlalutua"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_ya_tua"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Ya"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_tidak_tua"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Tidak"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="@string/anda_terlalu_cepat_hamil_lagi_2_tahun"
+                    android:textColor="@color/fontDefault"
+                    android:textSize="15sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_terlalucepat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_ya_cepat"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Ya"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_tidak_cepat"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Tidak"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="@string/anda_terlalu_lama_hamil_lagi_10_tahun"
+                    android:textColor="@color/fontDefault"
+                    android:textSize="15sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_terlalulama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_ya_lama"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Ya"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_tidak_lama"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Tidak"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="@string/anda_terlalu_banyak_anak_4_lebih"
+                    android:textColor="@color/fontDefault"
+                    android:textSize="15sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_terlalubanyak"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_ya_banyak"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Ya"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_tidak_banyak"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Tidak"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="@string/anda_terlalu_pendek_145_cm"
+                    android:textColor="@color/fontDefault"
+                    android:textSize="15sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_terlalupendek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_ya_pendek"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Ya"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_tidak_pendek"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Tidak"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="Anda pernah melahirkan dengan ?"
+                    android:textColor="@color/fontDefault"
+                    android:textSize="15sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_pernahmelahirkan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:weightSum="4"
+                    android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/rb_vacum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:buttonTint="@color/color"
+                            android:fontFamily="@font/nunito_sans"
+                            android:paddingStart="4dp"
+                            android:text="Vacum"
+                            android:textColor="@color/fontDefault"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_uri_dirogoh"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/color"
+                            android:fontFamily="@font/nunito_sans"
+                            android:paddingStart="4dp"
+                            android:text="Uri dirogoh"
+                            android:textColor="@color/fontDefault"
+                            android:textSize="14sp"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_diberi_infus"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="4dp"
+                        android:text="Infus/tranfusi"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="14sp"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_belum_pernah"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="4dp"
+                        android:text="Belum Pernah"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="14sp"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="Anda operasi secar ?"
+                    android:textColor="@color/fontDefault"
+                    android:textSize="15sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_operasisesar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_ya_sesar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Ya"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_tidak_sesar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Tidak"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="Anda memliki penyakit kurang darah ?"
+                    android:textColor="@color/fontDefault"
+                    android:textSize="15sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_kurang_darah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_ya_kurangDarah"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/color"
+                            android:fontFamily="@font/nunito_sans"
+                            android:paddingStart="8dp"
+                            android:text="Ya"
+                            android:textColor="@color/fontDefault"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_tidak_kurangDarah"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/color"
+                            android:fontFamily="@font/nunito_sans"
+                            android:paddingStart="8dp"
+                            android:text="Tidak"
+                            android:textColor="@color/fontDefault"
+                            android:textSize="16sp" />
+
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="Anda memliki penyakit menular sexual ?"
+                    android:textColor="@color/fontDefault"
+                    android:textSize="15sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_penyakit_menular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_ya_menular"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Ya"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_tidak_menular"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Tidak"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="Anda memliki penyakit TBC Paru?"
+                    android:textColor="@color/fontDefault"
+                    android:textSize="15sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_tbc_paru"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_ya_tbc"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Ya"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_tidak_tbc"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Tidak"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="Anda memliki penyakit Payah Jantung ?"
+                    android:textColor="@color/fontDefault"
+                    android:textSize="15sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_payah_jantung"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_ya_payah"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Ya"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_tidak_payah"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Tidak"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="Anda memliki penyakit Kencing Manis ?"
+                    android:textColor="@color/fontDefault"
+                    android:textSize="15sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_kencing_manis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_ya_kencing"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Ya"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_tidak_kencing"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Tidak"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="Anda memliki penyakit Malaria ?"
+                    android:textColor="@color/fontDefault"
+                    android:textSize="15sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_malaria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_ya_malaria"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Ya"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_tidak_malaria"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Tidak"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+
+                </RadioGroup>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="Bengkak pada muka/tungkai dan tekanan darah tinggi ?"
+                    android:textColor="@color/fontDefault"
+                    android:textSize="15sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_bengkakmuka"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_ya_bengkak"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Ya"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_tidak_bengkak"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Tidak"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="Anda hamil kembar 2 atau lebih ? "
+                    android:textColor="@color/fontDefault"
+                    android:textSize="15sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_hamilkembar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_ya_kembar2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Ya"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_tidak_kembar2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Tidak"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="Anda hamil kembar air (hydramnion) ?"
+                    android:textColor="@color/fontDefault"
+                    android:textSize="15sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_hamilkembarair"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_ya_kembarair"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Ya"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_tidak_kembarair"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Tidak"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="Apakah bayi anda mati dalam kandungan ?"
+                    android:textColor="@color/fontDefault"
+                    android:textSize="15sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_bayimati"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_ya_bayimati"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Ya"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_tidak_bayimati"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Tidak"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/nunito_sans"
+                android:text="Apakah anda mengalami kehamilan lebih bulan ?"
+                android:textColor="@color/fontDefault"
+                android:textSize="15sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_kemahilanlebih"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_ya_kemahilanlebih"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Ya"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_tidak_kemahilanlebih"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Tidak"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="Kehamilan letak sungsang ? "
+                    android:textColor="@color/fontDefault"
+                    android:textSize="15sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_hamilsungsang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_ya_hamilsungsang"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Ya"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_tidak_hamilsungsang"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Tidak"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="Kehamilan letak lintang ?"
+                    android:textColor="@color/fontDefault"
+                    android:textSize="15sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_letaklintang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_ya_letaklintang"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Ya"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_tidak_letaklintang"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Tidak"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/nunito_sans"
+                android:text="Anda mengalami pendarahan pada kehamilan ini ?"
+                android:textColor="@color/fontDefault"
+                android:textSize="15sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_pendarahan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_ya_pendarahan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Ya"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_tidak_pendarahan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Tidak"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="Anda mengalami preeklampsia berat atau kejang-kejang ? "
+                    android:textColor="@color/fontDefault"
+                    android:textSize="15sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_kejang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_ya_kejang"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Ya"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_tidak_kejang"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/color"
+                        android:fontFamily="@font/nunito_sans"
+                        android:paddingStart="8dp"
+                        android:text="Tidak"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/btnSelesai"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/bg_btn"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:text="@string/lihat_hasil"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

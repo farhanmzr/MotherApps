@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">Mother App</string>
+    <string name="silahkan_masuk">Silahkan masuk dengan,</string>
+    <string name="kata_sandi">Kata Sandi</string>
+    <string name="email">Email</string>
+    <string name="masuk">Masuk</string>
+    <string name="belum_punya_akun">Belum punya akun?</string>
+    <string name="daftar_disini">Daftar disini</string>
+    <string name="daftar">Daftar</string>
+    <string name="buat_akun_anda_sekarang_agar_memudahkan_anda_untuk_mengontrol_diri_anda">Buat akun anda sekarang agar memudahkan anda untuk mengontrol diri anda</string>
+    <string name="nama_pengguna">Nama Pengguna</string>
+    <string name="nomor_ponsel">Nomor Ponsel</string>
+    <string name="alamat">Alamat</string>
+    <string name="buat_akun">Buat Akun</string>
+    <string name="sudah_punya_akun">Sudah punya akun?</string>
+    <string name="tv_silahkan_masuk">Silahkan Masuk</string>
+    <string name="informasi">INFORMASI</string>
+    <string name="pengelolaan_nkehamilan">Pengelolaan\nKehamilan</string>
+    <string name="masalah_nkehamilan">Masalah\nKehamilan</string>
+    <string name="larangan_saat_nhamil">Larangan Saat\nHamil</string>
+    <string name="tanda_bahaya_nkehamilan">Tanda Bahaya\nKehamilan</string>
+    <string name="informasi_akun">Informasi Akun</string>
+    <string name="ubah_kata_sandi">Ubah Kata Sandi</string>
+    <string name="kata_sandi_baru">Kata Sandi Baru</string>
+    <string name="konfirmasi_kata_sandi_baru">Konfirmasi Kata Sandi Baru</string>
+    <string name="ubah_informasi_akun">Ubah Informasi Akun</string>
+    <string name="versi_1_0_0">Versi 1.0.0</string>
+    <string name="keluar">Keluar</string>
+    <string name="maaf_anda_sepertinya_belum_pernah_melakukan_pemeriksaan_silahkan_lakukan_pemeriksaan">Maaf, anda sepertinya belum pernah melakukan pemeriksaan mandiri. Silahkan lakukan pemeriksaan.</string>
+    <string name="konsultasi_nkehamilan">Konsultasi Kehamilan</string>
+    <string name="konsultasi">Konsultasi</string>
+    <string name="nama">Nama</string>
+    <string name="tanggal_lahir">Tanggal Lahir</string>
+    <string name="kehamilan_ke">Kehamilan ke-</string>
+    <string name="usia_anak_terakhir">Usia Anak Terakhir</string>
+    <string name="golongan_darah">Golongan Darah</string>
+    <string name="tinggi_badan_anda">Tinggi badan anda</string>
+    <string name="usia_kehamilan_anda">Usia kehamilan anda</string>
+    <string name="taksiran_tanggal_persalinan">Taksiran tanggal persalinan</string>
+    <string name="tanggal_hpht_anda">Tanggal HPHT anda</string>
+    <string name="berat_badan_anda_sebelum_hamil">Berat badan anda sebelum hamil</string>
+    <string name="berat_badan_anda_sesudah_hamil">Berat badan anda sesudah hamil</string>
+    <string name="tekanan_darah_anda">Tekanan Darah anda</string>
+    <string name="lingkar_lengan_anda">Lingkar lengan anda</string>
+    <string name="tinggi_rahim_anda">Tinggi Rahim anda</string>
+    <string name="gerak_janin_anda">Gerak Janin anda</string>
+    <string name="kadar_hemogoblin_hb_darah_anda">Kadar hemogoblin (Hb darah) anda</string>
+    <string name="imunisasi_tt_1_tetanus_1">Imunisasi TT 1 (Tetanus 1)</string>
+    <string name="imunisasi_tt_2_tetanus_2">Imunisasi TT 2 (Tetanus 2)</string>
+    <string name="hasil_pemeriksaan_tambahan">Hasil Pemeriksaan Tambahan</string>
+    <string name="pemeriksaan_urine">Pemeriksaan Urine</string>
+    <string name="pemeriksaan_swab_vagina">Pemeriksaan Swab Vagina</string>
+    <string name="intensitas_kontraksi_anda">Intensitas Kontraksi anda</string>
+    <string name="hasil_pemeriksaan">Hasil Pemeriksaan</string>
+    <string name="kesimpulan">Kesimpulan</string>
+    <string name="hasil_pemeriksaan_mandiri">Hasil Pemeriksaan Mandiri</string>
+    <string name="kriteria_resiko_kehamilan_yaitu_umur_dibawah_20_tahun_atau_diatas_30_tahun_kehamilan_lebih_dari_ke_2_dan_anak_terakhir_berusia_kurang_dari_2_tahun">Kriteria resiko kehamilan yaitu umur dibawah 20 tahun atau diatas 30 tahun, kehamilan lebih dari ke-2 dan anak terakhir berusia kurang dari 2 tahun.</string>
+    <string name="tinggi_badan_normal_agar_terhindar_dari_resiko_panggul_sempit_yaitu_diatas_150_cm">Tinggi badan normal agar terhindar dari resiko panggul sempit yaitu diatas 150 cm</string>
+    <string name="kriteria_gizi_yang_cukup_adalah_jika_penambahan_berat_badan_setelah_hamil_antara_8_12_kg">Kriteria gizi yang cukup adalah jika penambahan berat badan setelah hamil antara 8-12 Kg</string>
+    <string name="tekanan_darah_normal_adalah_kisaran_90_60_hingga_120_80_mmhg">Tekanan darah normal adalah kisaran 90/60 hingga 120/80 mmHg</string>
+    <string name="kriteria_gizi_yang_cukup_adalah_jika_ukuran_lingkar_lengan_atas_lebih_dari_23_5_cm">Kriteria gizi yang cukup adalah jika ukuran lingkar lengan atas lebih dari 23,5 cm</string>
+    <string name="kriteria_gerak_janin_normal_adalah_8_sampai_33_kali_sehari">Kriteria gerak janin normal adalah 8 sampai 33 kali sehari</string>
+    <string name="kriteria_kontraksi_atau_kenceng_kenceng_selama_kehamilan_normalnya_adalah_jarang_atau_tidak_sering">Kriteria kontraksi atau kenceng-kenceng selama kehamilan normalnya adalah jarang atau tidak sering</string>
+    <string name="kriteria_kadar_haemoglobin_dalam_darah_normalnya_adalah_12_gr_atau_lebih">Kriteria kadar haemoglobin dalam darah normalnya adalah 12 gr% atau lebih</string>
+    <string name="hasil_laboratorium">Hasil Laboratorium</string>
+    <string name="pemeriksaan_feses">Pemeriksaan Feses</string>
+    <string name="selesai">Selesai</string>
+    <string name="riwayat">RIWAYAT</string>
+    <string name="anda_terlalu_muda_hamil_16_tahun"><![CDATA[Anda terlalu muda hamil (<= 16 Tahun) ?]]></string>
+    <string name="anda_terlalu_lambat_hamil_kawin_4_tahun"><![CDATA[Anda terlalu lambat hamil/kawin (> 4 Tahun) ?]]></string>
+    <string name="ya">Ya</string>
+    <string name="tidak">Tidak</string>
+    <string name="anda_terlalu_tua_hamil_35_tahun"><![CDATA[Anda terlalu tua hamil (>= 35 Tahun) ?]]></string>
+    <string name="anda_terlalu_cepat_hamil_lagi_2_tahun"><![CDATA[Anda terlalu cepat hamil lagi (< 2 Tahun) ?]]></string>
+    <string name="anda_terlalu_lama_hamil_lagi_10_tahun"><![CDATA[Anda terlalu lama hamil lagi (> 10 Tahun) ?]]></string>
+    <string name="anda_terlalu_banyak_anak_4_lebih">Anda terlalu banyak anak (4 / lebih) ?</string>
+    <string name="anda_terlalu_pendek_145_cm"><![CDATA[Anda terlalu pendek (<= 145 cm) ?]]></string>
+    <string name="pemeriksaan_risiko">Pemeriksaan Risiko</string>
+    <string name="hasil_pemeriksaan_risiko">Hasil Pemeriksaan Risiko</string>
+    <string name="maaf_anda_sepertinya_belum_pernah_melakukan_pemeriksaan_risiko_silahkan_lakukan_pemeriksaan">Maaf, anda sepertinya belum pernah melakukan pemeriksaan risiko. Silahkan lakukan pemeriksaan.</string>
+    <string name="lihat_hasil">Lihat Hasil</string>
+
+
+    <string name="facebook_app_id">1054120705054464</string>
+    <string name="fb_login_protocol_scheme">fb1054120705054464</string>
+    <string name="google">Google</string>
+    <string name="pengaturan">Pengaturan</string>
+    <string name="version_app">Versi 1.2</string>
+    <string name="simpan">Simpan</string>
+
+
+</resources>

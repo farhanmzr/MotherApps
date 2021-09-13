@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".Activity.PemeriksaanIdentitasActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/ic_back_white"
+        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:text="Pemeriksaan Identitas"
+        android:textColor="@color/whiteFont"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/img_progres_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:text="Form Pemeriksaan Identitas"
+        android:textColor="@color/fontDefault"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:text=""
+        android:textColor="@color/fontDefault"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:hint="Nama"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="@color/color"
+            app:boxStrokeWidth="2.3dp"
+            app:hintTextAppearance="@style/text_input_layout"
+            app:hintTextColor="@color/color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etNama"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:inputType="textEmailAddress"
+                android:maxLength="35"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:fontFamily="@font/nunito_sans"
+                android:textColor="@color/fontDefault"
+                android:textColorHint="@color/fontDefault"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:focusableInTouchMode="true"
+            android:hint="@string/tanggal_lahir"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="@color/color"
+            app:boxStrokeWidth="2.3dp"
+            app:hintTextAppearance="@style/text_input_layout"
+            app:hintTextColor="@color/color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etTtl"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:inputType="text"
+                android:maxLength="35"
+                android:focusable="false"
+                android:text="HH-BB-TTTT"
+                android:fontFamily="@font/nunito_sans"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:textColor="@color/fontDefault"
+                android:textColorHint="@color/fontDefault"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Kehamilan ke-"
+            android:focusableInTouchMode="true"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="@color/color"
+            app:boxStrokeWidth="2.3dp"
+            app:hintTextAppearance="@style/text_input_layout"
+            app:hintTextColor="@color/color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etKelahiranKe"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:inputType="number"
+                android:maxLength="2"
+                android:fontFamily="@font/nunito_sans"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:textColor="@color/fontDefault"
+                android:textColorHint="@color/fontDefault"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:hint="Usia Anak Terakhir"
+            android:focusableInTouchMode="true"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="@color/color"
+            app:boxStrokeWidth="2.3dp"
+            app:hintTextAppearance="@style/text_input_layout"
+            app:hintTextColor="@color/color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etUsiaAnakTerakhir"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:inputType="number"
+                android:maxLength="2"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:fontFamily="@font/nunito_sans"
+                android:textColor="@color/fontDefault"
+                android:textColorHint="@color/fontDefault"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout2"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:hint="Golongan Darah"
+                    app:boxCornerRadiusBottomEnd="8dp"
+                    app:boxCornerRadiusBottomStart="8dp"
+                    app:boxCornerRadiusTopEnd="8dp"
+                    app:boxCornerRadiusTopStart="8dp"
+                    app:boxStrokeColor="@color/color"
+                    app:boxStrokeWidth="2.3dp"
+                    app:hintTextAppearance="@style/text_input_layout"
+                    app:hintTextColor="@color/color"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etGolDarah"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="35"
+                        android:text=" "
+                        android:focusable="false"
+                        android:paddingStart="24dp"
+                        android:paddingEnd="24dp"
+                        android:textColor="@color/fontDefault"
+                        android:textColorHint="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Spinner
+                    android:id="@+id/spinner_gol_darah"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:spinnerMode="dropdown"
+                    android:fontFamily="@font/nunito_sans"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textInputLayout2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+</LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_btn"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:text="Lanjut"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

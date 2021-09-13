@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.TentangAplikasiActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="56dp">
+
+            <View
+                android:id="@+id/view14"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/color"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/icBack"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/ic_back_white"
+                app:layout_constraintBottom_toBottomOf="@+id/view14"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:layout_marginStart="16dp"
+                android:text="Tentang Aplikasi MOTHER"
+                android:textColor="@color/whiteFont"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view14"
+                app:layout_constraintStart_toEndOf="@+id/icBack"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="start"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view14">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:text="versi 1.0"
+                    android:textColor="@color/color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_sans"
+                    android:layout_marginTop="16dp"
+                    android:text="Kami mengucapkan terima kasih kepada pihak-
+pihak yang telah membantu pembuatan aplikasi
+MOTHER “Monitoring Kehamilan Berisiko”
+dengan lancar. Khususnya kami mengucapkan
+terima kasih kepada Kementerian Kesehatan
+Republik Indonesia ( Kemenkes RI ), GERMAS,
+Pemkot Kota Semarang, dan Politeknik
+Kesehatan Semarang yang telah mengizinkan
+pembuatan aplikasi ini. "
+                    android:textColor="@color/fontDefault"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/ic_kemenkes" />
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@drawable/ic_germas" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@drawable/ic_poltekkes" />
+
+                    <ImageView
+                        android:layout_width="42dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@drawable/ic_p2ptm" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@drawable/ic_pemkot" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="Tim Penyusun :"
+                    android:textColor="@color/fontDefault"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:text="Kurniati Puji Lestari, S.Kp., M.Kes."
+                    android:textColor="@color/fontDefault"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="NIP . 196512041989032015"
+                    android:textColor="@color/fontDefault"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:text="Dra. Ns. Desak Made Wenten Parwati, M.Kes."
+                    android:textColor="@color/fontDefault"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="NIP . 195705301981032002"
+                    android:textColor="@color/fontDefault"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:text="Muhammad Jauhar, S.Kep., Ners., M.Kep."
+                    android:textColor="@color/fontDefault"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="NIK . 199010030190"
+                    android:textColor="@color/fontDefault"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:text="Azel Tiara Dewi, S.Tr.Kep"
+                    android:textColor="@color/fontDefault"
+                    android:textSize="14sp" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/nunito_sans"
+                        android:text="Dan juga kepada Tim Developer dari\n aplikasi
+MOTHER ini adalah AKSANTARA DIGITAL"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="104dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_logo_aksantara" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_mail"/>
+
+                    <TextView
+                        android:id="@+id/tvEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:fontFamily="@font/nunito_sans"
+                        android:text="aksantara.digital@gmail.com"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_web"/>
+
+                    <TextView
+                        android:id="@+id/tvWebsite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:fontFamily="@font/nunito_sans"
+                        android:text="aksantaradigital.com"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_telp"/>
+
+                    <TextView
+                        android:id="@+id/tvTelp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:fontFamily="@font/nunito_sans"
+                        android:text="+6281225758530"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_ig"/>
+
+                    <TextView
+                        android:id="@+id/tvInstagram"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:fontFamily="@font/nunito_sans"
+                        android:text="aksantara.digital"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

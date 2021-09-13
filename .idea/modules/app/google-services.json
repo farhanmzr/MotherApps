@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "500438740026",
+    "firebase_url": "https://sehariapp-bd8fb.firebaseio.com",
+    "project_id": "sehariapp-bd8fb",
+    "storage_bucket": "sehariapp-bd8fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500438740026:android:6218f3e303a6c1821cd903",
+        "android_client_info": {
+          "package_name": "com.example.sehariapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500438740026-sfocml1om6k8st38l71f0nf3gc086mjd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sehariapp",
+            "certificate_hash": "6e3f12dbec76896cfdb27aff8c2044c2d7a49d28"
+          }
+        },
+        {
+          "client_id": "500438740026-4emrumicdp4070p8ancdk6k8nrjoo8dc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqWCQNs7XZ3m1yG3cN-kvpdm9WVzd0bxQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "500438740026-4emrumicdp4070p8ancdk6k8nrjoo8dc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,1273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".Activity.HasilPemeriksaanActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="56dp">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="@color/color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:text="Hasil Pemeriksaan Mandiri"
+                android:textColor="@color/whiteFont"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/img_progres_3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@color/color"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="center"
+                android:paddingVertical="12dp"
+                android:text="Identitas"
+                android:textColor="@color/whiteFont"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+            <TextView
+                android:id="@+id/textView15"
+                style="@style/FormatTextTitle"
+                android:text="@string/nama"
+                app:layout_constraintBottom_toBottomOf="@+id/tvNama"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvNama" />
+
+            <TextView
+                android:id="@+id/tvNama"
+                style="@style/FormatTextSubTitle"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView5"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/colorLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvNama" />
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/FormatTextTitle"
+                android:text="@string/tanggal_lahir"
+                app:layout_constraintBottom_toBottomOf="@+id/tvTtl"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvTtl" />
+
+            <TextView
+                android:id="@+id/tvTtl"
+                style="@style/FormatTextSubTitle"
+                android:layout_marginEnd="4dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toStartOf="@+id/tvUmur"
+                app:layout_constraintStart_toEndOf="@+id/textView5"
+                app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+            <TextView
+                android:id="@+id/tvUmur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="end"
+                android:maxLines="1"
+                android:textColor="@color/fontDefault"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvTtl" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/colorLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTtl" />
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/FormatTextTitle"
+                android:text="@string/kehamilan_ke"
+                app:layout_constraintBottom_toBottomOf="@+id/tvKehamilanKe"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvKehamilanKe" />
+
+            <TextView
+                android:id="@+id/tvKehamilanKe"
+                style="@style/FormatTextSubTitle"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView5"
+                app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/colorLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvKehamilanKe" />
+
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/FormatTextTitle"
+                android:text="@string/usia_anak_terakhir"
+                app:layout_constraintBottom_toBottomOf="@+id/tvUsiaAnakTerakhkir"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvUsiaAnakTerakhkir" />
+
+            <TextView
+                android:id="@+id/tvUsiaAnakTerakhkir"
+                style="@style/FormatTextSubTitle"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView5"
+                app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/colorLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvUsiaAnakTerakhkir" />
+
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/FormatTextTitle"
+                android:text="@string/golongan_darah"
+                app:layout_constraintBottom_toBottomOf="@+id/tvGolDarah"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvGolDarah" />
+
+            <TextView
+                android:id="@+id/tvGolDarah"
+                style="@style/FormatTextSubTitle"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView5"
+                app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/colorLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvGolDarah" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/discover_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view6">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingVertical="8dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans"
+                        android:text="@string/kesimpulan"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvKriteriaResikoKehamilan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@color/colorLine"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/nunito_sans"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:text="@string/kriteria_resiko_kehamilan_yaitu_umur_dibawah_20_tahun_atau_diatas_30_tahun_kehamilan_lebih_dari_ke_2_dan_anak_terakhir_berusia_kurang_dari_2_tahun"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:paddingVertical="12dp"
+                android:text="@string/hasil_pemeriksaan_mandiri"
+                android:textColor="@color/whiteFont"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/discover_card_view" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/ic_hpht"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <TextView
+                android:id="@+id/textView8"
+                style="@style/FormatTextTitle"
+                android:text="@string/tanggal_hpht_anda"
+                app:layout_constraintStart_toEndOf="@+id/imageView7"
+                app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+            <TextView
+                android:id="@+id/tvHPHT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:textColor="@color/fontDefault"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+                app:layout_constraintStart_toEndOf="@+id/imageView7" />
+
+            <TextView
+                android:id="@+id/textView10"
+                style="@style/FormatTextTitle"
+                android:text="@string/usia_kehamilan_anda"
+                app:layout_constraintBottom_toBottomOf="@+id/tvUsiaKehamilan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvUsiaKehamilan" />
+
+            <TextView
+                android:id="@+id/tvUsiaKehamilan"
+                style="@style/FormatTextSubTitle"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView10"
+                app:layout_constraintTop_toBottomOf="@+id/tvHPHT" />
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/colorLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvUsiaKehamilan" />
+
+            <TextView
+                android:id="@+id/textView11"
+                style="@style/FormatTextTitle"
+                android:text="@string/taksiran_tanggal_persalinan"
+                app:layout_constraintBottom_toBottomOf="@+id/tvTaksiranPersalinan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvTaksiranPersalinan" />
+
+            <TextView
+                android:id="@+id/tvTaksiranPersalinan"
+                style="@style/FormatTextSubTitle"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView11"
+                app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+            <View
+                android:id="@+id/view8"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/colorLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTaksiranPersalinan" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/ic_heigh"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view8" />
+
+            <TextView
+                android:id="@+id/textView12"
+                style="@style/FormatTextTitle"
+                android:text="@string/tinggi_badan_anda"
+                app:layout_constraintStart_toEndOf="@+id/imageView8"
+                app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+            <TextView
+                android:id="@+id/tvTinggiBadan"
+                style="@style/FormatTextSubTitleDown"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+                app:layout_constraintStart_toEndOf="@+id/imageView8" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tinggi_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTinggiBadan">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingVertical="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans"
+                        android:text="@string/kesimpulan"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvKriteriaResikoPanggul"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@color/colorLine" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/nunito_sans"
+                        android:gravity="center"
+                        android:text="@string/tinggi_badan_normal_agar_terhindar_dari_resiko_panggul_sempit_yaitu_diatas_150_cm"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_weight"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tinggi_card_view" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView9"
+                app:layout_constraintTop_toTopOf="@+id/imageView9">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="@string/berat_badan_anda_sebelum_hamil"
+                    android:textColor="@color/fontDefault"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvBB_sebelum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:textColor="@color/fontDefault"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView9">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="@string/berat_badan_anda_sesudah_hamil"
+                    android:textColor="@color/fontDefault"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvBB_sesudah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:textColor="@color/fontDefault"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bb_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingVertical="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans"
+                        android:text="@string/kesimpulan"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvKriteriaBeratBadan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@color/colorLine" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/nunito_sans"
+                        android:gravity="center"
+                        android:text="@string/kriteria_gizi_yang_cukup_adalah_jika_penambahan_berat_badan_setelah_hamil_antara_8_12_kg"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_pressure"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bb_card_view" />
+
+            <TextView
+                android:id="@+id/textView13"
+                style="@style/FormatTextTitle"
+                android:text="@string/tekanan_darah_anda"
+                app:layout_constraintStart_toEndOf="@+id/imageView10"
+                app:layout_constraintTop_toTopOf="@+id/imageView10" />
+
+            <TextView
+                android:id="@+id/tvTekananDarah"
+                style="@style/FormatTextSubTitleDown"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+                app:layout_constraintStart_toEndOf="@+id/imageView10" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tekanandarah_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTekananDarah">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingVertical="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans"
+                        android:text="@string/kesimpulan"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvKriteriaTekananDarah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@color/colorLine" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/nunito_sans"
+                        android:gravity="center"
+                        android:text="@string/tekanan_darah_normal_adalah_kisaran_90_60_hingga_120_80_mmhg"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_arm"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tekanandarah_card_view" />
+
+            <TextView
+                android:id="@+id/textView16"
+                style="@style/FormatTextTitle"
+                android:text="@string/lingkar_lengan_anda"
+                app:layout_constraintStart_toEndOf="@+id/imageView11"
+                app:layout_constraintTop_toTopOf="@+id/imageView11" />
+
+            <TextView
+                android:id="@+id/tvLingkarlila"
+                style="@style/FormatTextSubTitleDown"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+                app:layout_constraintStart_toEndOf="@+id/imageView11" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/lingkarlila_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLingkarlila">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingVertical="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans"
+                        android:text="@string/kesimpulan"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvKriteriaLingkarlila"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@color/colorLine" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/nunito_sans"
+                        android:gravity="center"
+                        android:text="@string/kriteria_gizi_yang_cukup_adalah_jika_ukuran_lingkar_lengan_atas_lebih_dari_23_5_cm"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_high"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lingkarlila_card_view" />
+
+            <TextView
+                android:id="@+id/textView17"
+                style="@style/FormatTextTitle"
+                android:text="@string/tinggi_rahim_anda"
+                app:layout_constraintStart_toEndOf="@+id/imageView12"
+                app:layout_constraintTop_toTopOf="@+id/imageView12" />
+
+            <TextView
+                android:id="@+id/tvTinggiRahim"
+                style="@style/FormatTextSubTitleDown"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+                app:layout_constraintStart_toEndOf="@+id/imageView12" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tinggirahim_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTinggiRahim">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingVertical="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans"
+                        android:text="@string/kesimpulan"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvKriteriaTinggiRahim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_motion"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tinggirahim_card_view" />
+
+            <TextView
+                android:id="@+id/textView18"
+                style="@style/FormatTextTitle"
+                android:text="@string/gerak_janin_anda"
+                app:layout_constraintStart_toEndOf="@+id/imageView13"
+                app:layout_constraintTop_toTopOf="@+id/imageView13" />
+
+            <TextView
+                android:id="@+id/tvGerakJanin"
+                style="@style/FormatTextSubTitleDown"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView13"
+                app:layout_constraintStart_toEndOf="@+id/imageView13" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/gerakjanin_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvGerakJanin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingVertical="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans"
+                        android:text="@string/kesimpulan"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvKriteriaGerakJanin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@color/colorLine" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/nunito_sans"
+                        android:gravity="center"
+                        android:text="@string/kriteria_gerak_janin_normal_adalah_8_sampai_33_kali_sehari"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_contraction"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gerakjanin_card_view" />
+
+            <TextView
+                android:id="@+id/textView19"
+                style="@style/FormatTextTitle"
+                android:text="@string/intensitas_kontraksi_anda"
+                app:layout_constraintStart_toEndOf="@+id/imageView14"
+                app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+            <TextView
+                android:id="@+id/tvIntensitasKontraksi"
+                style="@style/FormatTextSubTitleDown"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+                app:layout_constraintStart_toEndOf="@+id/imageView14" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/intensitaskontraksi_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvIntensitasKontraksi">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingVertical="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans"
+                        android:text="@string/kesimpulan"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvKriteriaIntensitasKontraksi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@color/colorLine" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/nunito_sans"
+                        android:gravity="center"
+                        android:text="@string/kriteria_kontraksi_atau_kenceng_kenceng_selama_kehamilan_normalnya_adalah_jarang_atau_tidak_sering"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:paddingVertical="12dp"
+                android:text="@string/hasil_pemeriksaan_tambahan"
+                android:textColor="@color/whiteFont"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/intensitaskontraksi_card_view" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_blood"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_sans"
+                android:layout_marginStart="16dp"
+                android:text="@string/kadar_hemogoblin_hb_darah_anda"
+                android:textColor="@color/fontDefault"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView15"
+                app:layout_constraintTop_toTopOf="@+id/imageView15" />
+
+            <TextView
+                android:id="@+id/tvHbDarah"
+                style="@style/FormatTextSubTitleDown"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+                app:layout_constraintStart_toEndOf="@+id/imageView15" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/hbdarah_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvHbDarah">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingVertical="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans"
+                        android:text="@string/kesimpulan"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvKriteriaHbDarah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@color/colorLine" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/nunito_sans"
+                        android:gravity="center"
+                        android:text="@string/kriteria_kadar_haemoglobin_dalam_darah_normalnya_adalah_12_gr_atau_lebih"
+                        android:textColor="@color/fontDefault"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView22"
+                style="@style/FormatTextTitle"
+                android:text="@string/imunisasi_tt_1_tetanus_1"
+                app:layout_constraintBottom_toBottomOf="@+id/tvTetanus1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvTetanus1" />
+
+            <TextView
+                android:id="@+id/tvTetanus1"
+                style="@style/FormatTextSubTitle"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView22"
+                app:layout_constraintTop_toBottomOf="@+id/hbdarah_card_view" />
+
+            <View
+                android:id="@+id/view9"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/colorLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTetanus1" />
+
+            <TextView
+                android:id="@+id/textView23"
+                style="@style/FormatTextTitle"
+                android:text="@string/imunisasi_tt_2_tetanus_2"
+                app:layout_constraintBottom_toBottomOf="@+id/tvTetanus2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvTetanus2" />
+
+            <TextView
+                android:id="@+id/tvTetanus2"
+                style="@style/FormatTextSubTitle"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView23"
+                app:layout_constraintTop_toBottomOf="@+id/view9" />
+
+            <View
+                android:id="@+id/view10"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/colorLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTetanus2" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:paddingVertical="12dp"
+                android:text="@string/hasil_laboratorium"
+                android:textColor="@color/whiteFont"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view10" />
+
+            <TextView
+                android:id="@+id/textView25"
+                style="@style/FormatTextTitle"
+                android:layout_marginTop="16dp"
+                android:text="@string/pemeriksaan_urine"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView24"/>
+
+            <TextView
+                android:id="@+id/tvUrine"
+                style="@style/FormatTextSubTitleDown"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView25"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <View
+                android:id="@+id/view11"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/colorLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvUrine" />
+
+            <TextView
+                android:id="@+id/textView26"
+                style="@style/FormatTextTitle"
+                android:layout_marginTop="12dp"
+                android:text="@string/pemeriksaan_feses"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view11"/>
+
+            <TextView
+                android:id="@+id/tvFeses"
+                style="@style/FormatTextSubTitleDown"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView26"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <View
+                android:id="@+id/view12"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/colorLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvFeses" />
+
+            <TextView
+                android:id="@+id/textView27"
+                style="@style/FormatTextTitle"
+                android:layout_marginTop="12dp"
+                android:text="@string/pemeriksaan_swab_vagina"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view12"/>
+
+            <TextView
+                android:id="@+id/tvSwabVagina"
+                style="@style/FormatTextSubTitleDown"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView27"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btnSelesai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/selesai"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSwabVagina" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

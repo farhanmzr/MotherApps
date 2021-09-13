@@ -1,0 +1,61 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="text_input_layout" parent="TextAppearance.Design.Hint">
+        <item name="android:fontFamily">@font/nunito_sans_bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="FormatTextTitle">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginStart">16dp</item>
+    <item name="android:fontFamily">@font/nunito_sans</item>
+    <item name="android:textColor">@color/fontDefault</item>
+    <item name="android:textSize">14sp</item>
+</style>
+
+    <style name="FormatTextSubTitle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:fontFamily">@font/nunito_sans_bold</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/fontDefault</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="FormatTextSubTitleDown">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:fontFamily">@font/nunito_sans_bold</item>
+        <item name="android:textColor">@color/fontDefault</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="tab_text_xxhdpi" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/nunito_sans_bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="BottomNavigationView" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="BottomNavigationView.Active" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">32sp</item>
+    </style>
+
+
+
+
+</resources>

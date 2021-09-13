@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#EE79BD</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="color">#EE79BD</color>
+    <color name="fontDefault">#606060</color>
+    <color name="colorBackground">#F6F6F6</color>
+    <color name="whiteFont">#F8F8F8</color>
+    <color name="colorLine">#E8E8E8</color>
+    <color name="colorLine2">#C4C4C4</color>
+    <color name="colorVersion">#949494</color>
+
+    <color name="colorDanger">#CF565B</color>
+
+
+
+</resources>
